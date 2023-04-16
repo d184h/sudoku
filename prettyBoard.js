@@ -1,3 +1,5 @@
+const board = require("./isSolved");
+
 function prettyBoard(board) {
   if (typeof board === "string") {
     return board;
@@ -15,3 +17,5 @@ function prettyBoard(board) {
   const resultString = newArr.join("\n");
   return resultString + "\n";
 }
+
+module.exports = prettyBoard();
